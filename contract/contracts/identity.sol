@@ -67,7 +67,7 @@ contract Identity {
     mapping(address => issuer) public IssuerDetail;
 
 
-    constructor() {
+    constructor() public {
         Owner = msg.sender;
     }
 
