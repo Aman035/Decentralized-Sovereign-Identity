@@ -11,7 +11,7 @@ module.exports = {
     },
     matic_mumbai: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, process.env.NETWORK);
+        return new HDWalletProvider(process.env.PRIVATE_KEY, process.env.NETWORK);
       },
       network_id: 80001
     }
