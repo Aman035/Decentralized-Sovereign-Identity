@@ -7,14 +7,14 @@ import Header from './components/header/header';
 import About from './components/about/about';
 import Profile from './components/profile/profile';
 import NewId from './components/profile/newid';
-// import Issuer from './components/issuer/profile';
-// import VerifyIssuer from './components/verifyIssuer/verify';
+import Issuer from './components/issuer/profile';
+import VerifyIssuer from './components/verifyIssuer/verify';
 import AlertComp from './components/alert';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { authLogout } from './redux/actions/auth';
 import Loading from './components/loading/loading';
-// import Identity from './components/profile/identity';
+import Identity from './components/profile/identity';
 import { updateRequestInfo } from './redux/actions/issuerRequest';
 import { updateIssuerInfo } from './redux/actions/issuer';
 
@@ -93,13 +93,13 @@ class App extends Component{
                     <Route path='/about' component={About}/>
                     <PrivateRoute path='/newid' component={NewId}/>
                     <PrivateRoute path='/profile' component={Profile}/>
-                    {/* <PrivateRoute path='/issuer' component={Issuer}/>
+                    <PrivateRoute path='/issuer' component={Issuer}/>
                     <PrivateRoute exact path = "/id/:num"  component={(props) =>{
                         return(
                         <Identity identity = {this.props.User.info.identity.filter( item =>item.num.toString() === props.match.params.num)[0]}/>
                         )}}/>
                         
-                    <SuperPrivateRoute path='/verifyissuer' component={VerifyIssuer}/> */}
+                    <SuperPrivateRoute path='/verifyissuer' component={VerifyIssuer}/>
                     <Redirect to='/home'/>
                 </Switch>
                 <AlertComp className="alert"/>

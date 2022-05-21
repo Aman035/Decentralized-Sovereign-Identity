@@ -26,12 +26,12 @@ const Header = (props)=>{
 		icon : <AccountCircleIcon color="primary" fontSize="large"/>,
 		private : true
 	},
-	// {
-	// 	title : "Issuer Profile",
-	// 	link : "/issuer",
-	// 	icon : <SupervisorAccountRoundedIcon color="primary" fontSize="large"/>,
-	// 	private : true
-	// },
+	{
+		title : "Issuer Profile",
+		link : "/issuer",
+		icon : <SupervisorAccountRoundedIcon color="primary" fontSize="large"/>,
+		private : true
+	},
 	{
 		title : "Home",
 		link : "/home",
@@ -49,7 +49,7 @@ const Header = (props)=>{
 	return (
 		<div className="header">
 			<span className="align">
-				{/* {props.User.info.address!=="" && props.User.info.address.toLowerCase() ===  props.IssuerRequest.info.address.toLowerCase()?
+				{props.User.info.address!=="" && props.User.info.address.toLowerCase() ===  props.IssuerRequest.info.address.toLowerCase()?
 				<div className="customNav">
 					<Tooltip title={<h6>Issuer Verification</h6>} arrow placement="right">
 						<Link to="/verifyissuer">
@@ -58,7 +58,7 @@ const Header = (props)=>{
 					</Tooltip>
 				</div>
 				:null
-				} */}
+				}
 				{tabs.map(tab => (
 					props.Auth.isAuthenticated || (!tab.private)?
 						<div className="customNav" key={tab.title}>
