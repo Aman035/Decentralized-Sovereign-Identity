@@ -38,12 +38,12 @@ const Header = (props)=>{
 		icon : <HomeRoundedIcon color="primary" fontSize="large"/>,
 		private : false
 	},
-	// {
-	// 	title : "About App & Developer",
-	// 	link : "/about",
-	// 	icon : <InfoIcon color="primary" fontSize="large"/>,
-	// 	private : false
-	// }
+	{
+		title : "About App & Developer",
+		link : "/about",
+		icon : <InfoIcon color="primary" fontSize="large"/>,
+		private : false
+	}
 ]
 
 	return (

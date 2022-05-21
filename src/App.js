@@ -4,7 +4,7 @@ import {Switch,Route,Redirect,withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
 import Home from './components/home/home';
 import Header from './components/header/header';
-// import About from './components/about/about';
+import About from './components/about/about';
 import Profile from './components/profile/profile';
 import NewId from './components/profile/newid';
 // import Issuer from './components/issuer/profile';
@@ -90,7 +90,7 @@ class App extends Component{
                 <div className="headingTab"></div>
                 <Switch>
                     <Route path='/home' component={Home}/>
-                    {/* <Route path='/about' component={About}/> */}
+                    <Route path='/about' component={About}/>
                     <PrivateRoute path='/newid' component={NewId}/>
                     <PrivateRoute path='/profile' component={Profile}/>
                     {/* <PrivateRoute path='/issuer' component={Issuer}/>
