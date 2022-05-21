@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+[![GitHub contributors](https://img.shields.io/github/contributors/Aman035/Decentralized-Sovereign-Identity?style=for-the-badge)](https://github.com/Aman035/Decentralized-Sovereign-Identity/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/Aman035/Decentralized-Sovereign-Identity?style=for-the-badge)](https://github.com/Aman035/Decentralized-Sovereign-Identity/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Aman035/Decentralized-Sovereign-Identity?style=for-the-badge)](https://github.com/Aman035/Decentralized-Sovereign-Identity/network)
+[![GitHub stars](https://img.shields.io/github/stars/Aman035/Decentralized-Sovereign-Identity?style=for-the-badge)](https://github.com/Aman035/Decentralized-Sovereign-Identity/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Aman035/Decentralized-Sovereign-Identity?style=for-the-badge)](https://github.com/Aman035/Decentralized-Sovereign-Identity/blob/main/LICENSE)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+  <h3 align="center">Decentra ID</h3>
+  <p align="center">
+    <a href="https://decentralized-sovereign-identity-jhzsjc.argoapp.io/#/home">View Demo</a>
+    ·
+    <a href="https://github.com/Aman035/Decentralized-Sovereign-Identity/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Aman035/Decentralized-Sovereign-Identity/issues">Request Feature</a>
+  </p>
+</p>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#contract-code">Contract Code</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#hosting">Hosting</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
+## About The Project
+The project tends to offers a platform where a user can create any self-sovereign decentralized digital identity, verify them cryptographically and share them in secured encrypted form with Zero Knowledge Proof.
+<p align="center">
+<img src="public\assets\flow.png"/>
 
-### `npm start`
+</p>
+#### Contract Code
+Contract is deployed on Polygon Mumbai testnet.
+Contract Address -  [View on PolygonScan](https://mumbai.polygonscan.com/address/0xFbD45EFD350dDC7953F3DbEe9B1E5E233b567845)
+0xFbD45EFD350dDC7953F3DbEe9B1E5E233b567845 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* ReactJS 
+* Redux
+* Stylings - Material UI , Bootstrap , React Spring
+* Wallet Integrations - Metamask
+* Solidity
+* Test Cases - Mocha And Chai
 
-### `npm test`
+#### Hosting
+[Using Spheron](https://docs.spheron.network/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://decentralized-sovereign-identity-jhzsjc.argoapp.io/
 
-### `npm run build`
+<!-- Installation -->
+## Installation
+1. Clone the repo
+```sh
+git clone https://github.com/Aman035/Decentralized-Sovereign-Identity.git
+```
+#### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.2. Install NPM packages
+   ```sh
+   npm install
+   ```
+1.3. Start the React App
+   ```sh
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Contracts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2.2 Go to Contract Directory
+   ```sh
+   cd contract
+   ```
+2.2 Insall packages using truffle
+   ```sh
+   truffle init
+   ```
+1.2. For running test cases start local test net Instance on port 8545 using Ganache
+   ```sh
+   truffle test
+   ```
+1.3. To compile the contarcts
+   ```sh
+   truffle compile
+   ```
+1.3. To deploy the contracts add a .env file with the following variables
+   ```sh
+   PRIVATE_KEY=YOUR_ETHEREUM_ACCOUNT_PRIVATE_KEY
+   NETWORK=RPC_URL_OF_NETWORK
+   ```
+   ```sh
+   truffle deploy --network NEWTWORK_NAME
+   ```
+</br>
+</br>
+This project was started by <a href="https://github.com/Aman035">Aman</a> & <a href="https://github.com/Nilesh46">Nilesh</a> during <a href="https://hackathon.money/">Hack Money Hackathon</a>.
