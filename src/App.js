@@ -3,10 +3,10 @@ import './App.css';
 import {Switch,Route,Redirect,withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
 import Home from './components/home/home';
-// import Header from './components/header/header';
+import Header from './components/header/header';
 // import About from './components/about/about';
-// import Profile from './components/profile/profile';
-// import NewId from './components/profile/newid';
+import Profile from './components/profile/profile';
+import NewId from './components/profile/newid';
 // import Issuer from './components/issuer/profile';
 // import VerifyIssuer from './components/verifyIssuer/verify';
 import AlertComp from './components/alert';
@@ -86,14 +86,14 @@ class App extends Component{
                 <Link to="/home">
                 <img src="/assets/logo.png" alt="Logo" height="60px" width ="60px" className="logo"/>
                 </Link>
-                {/* <Header/> */}
+                <Header/>
                 <div className="headingTab"></div>
                 <Switch>
                     <Route path='/home' component={Home}/>
                     {/* <Route path='/about' component={About}/> */}
-                    {/* <PrivateRoute path='/newid' component={NewId}/>
+                    <PrivateRoute path='/newid' component={NewId}/>
                     <PrivateRoute path='/profile' component={Profile}/>
-                    <PrivateRoute path='/issuer' component={Issuer}/>
+                    {/* <PrivateRoute path='/issuer' component={Issuer}/>
                     <PrivateRoute exact path = "/id/:num"  component={(props) =>{
                         return(
                         <Identity identity = {this.props.User.info.identity.filter( item =>item.num.toString() === props.match.params.num)[0]}/>
