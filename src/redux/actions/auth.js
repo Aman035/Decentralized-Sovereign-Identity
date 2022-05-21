@@ -8,7 +8,7 @@ import { updateIssuerInfo } from './issuer';
 import { delay } from '../../helper';
 import web3 from '../../web3';
 
-const chainId=80001;
+const chainId="80001";
 
 //try connecting to metamask wallet and get account address
 export const trySignin = ()=>async(dispatch)=>{
@@ -55,11 +55,14 @@ export const trySignin = ()=>async(dispatch)=>{
             }
     }
 
-    if(window.ethereum.networkVersion !== chainId){
-        dispatch(authError("Please Switch to Polygon Mumbai Network"));
-        dispatch(alert("Please Switch to Polygon Mumbai Network" , "error"));
-        return;
-    }
+    await setTimeout(()=> {
+        if(window.ethereum.networkVersion !== chainId){
+            dispatch(authError("Please Switch to Polygon Mumbai Network"));
+            dispatch(alert("Please Switch to Polygon Mumbai Network" , "error"));
+            return;
+        }
+    }, 2000);
+    
 
     try{
         await window.ethereum.request({ method: 'eth_requestAccounts'})
