@@ -36,7 +36,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The project tends to offers a platform where a user can create any self-sovereign decentralized digital identity, verify them cryptographically and share them in secured encrypted form with Zero Knowledge Proof.
+ ‘Decentra ID’ provides a decentralized identification system using Zero Knowledge proof.
+
+The project tends to offer a secured application where a user can create any digital identity, encrypt it using his public/private keys and store it on a secure decentralized storage system IPFS. This storage data is published on blockchain in encrypted form using asymmetric encryptions and empowers a user to share these identities securely. Also, the issuers are allowed to digitally sign all the identities for verification of data using the public-private key encryption.
+
 <p align="center">
 <img src="public\assets\flow.png"/>
 </p>
