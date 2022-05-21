@@ -39,9 +39,10 @@
 The project tends to offers a platform where a user can create any self-sovereign decentralized digital identity, verify them cryptographically and share them in secured encrypted form with Zero Knowledge Proof.
 <p align="center">
 <img src="public\assets\flow.png"/>
-
 </p>
+
 #### Contract Code
+
 Contract is deployed on Polygon Mumbai testnet.
 Contract Address -  [View on PolygonScan](https://mumbai.polygonscan.com/address/0xFbD45EFD350dDC7953F3DbEe9B1E5E233b567845)
 0xFbD45EFD350dDC7953F3DbEe9B1E5E233b567845 
